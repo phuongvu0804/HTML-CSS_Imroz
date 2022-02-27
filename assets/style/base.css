@@ -65,3 +65,42 @@ body {
         transform: translateY(0);
     }
 }
+
+/* Back-to-top button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border: 0.2rem solid;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--grey-color);
+}
+
+.back-to-top-btn path {
+    stroke: var(--primary-color);
+    stroke-width: 4;
+    fill: none;
+}
+
+.back-to-top-btn i{
+    font-size: 2.6rem;
+    color: var(--primary-color);
+    line-height: 5rem;
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.cd-top--fade-out { 
+    opacity: 1;
+}
+
+
