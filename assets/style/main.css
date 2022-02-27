@@ -212,11 +212,12 @@ nav {
 }
 
 .carousel-control__btn {
-  transition: all 0.3 ease-in;
+  top: 15rem
 }
 
 .carousel-control__btn:hover .carousel-control__btn-icon::before {
   background-color: var(--primary-color);
+  border: unset;
   transform: translate(1rem, -50%);
 }
 
@@ -225,15 +226,17 @@ nav {
 }
 
 .carousel-control__btn--next:hover::before {
-  transform: translateX(186%);
+    right: 50%;
+    transform: translateX(200%);
 }
 
 .carousel-control__btn--prev:hover .carousel-control__btn-icon::before {
-  transform: translate(-1rem, -50%);
+  transform: translate(-8rem, -50%);
 }
 
 .carousel-control__btn--prev:hover::before {
-  transform: translate(-1rem, -50%);
+  left: 50%;
+  transform: translateX(-200%);
 }
 
 .carousel-control__btn-icon {
@@ -260,19 +263,16 @@ nav {
   position: absolute;
   content: url(http://rainbowit.net/html/imroz/assets/images/icons/slick-arrow-left-small.png);
   z-index: 2;
+  transition: all 0.3s ease-in;
 }
 
 .carousel-control__btn.carousel-control-next::before {
   position: absolute;
   content: url(http://rainbowit.net/html/imroz/assets/images/icons/slick-arrow-right-small.png);
   z-index: 2;
+  transition: all 0.3s ease-in;
 
 }
-
-/* .carousel-control__btn-icon:hover::before {
-  /*transform: translate(2rem, -50%); */
-  background-color: var(--primary-color); 
-} */
 
 /* Service */
 
@@ -414,12 +414,12 @@ nav {
 }
 
 .project__card-item:hover .project-card-item__hover {
-  transform: translate(-50%, -6rem);
+  transform: translate(-50%, -1rem);
   opacity: 1;
 }
 
 .project__card-item:hover .project-card-item__title {
-  transform: translateY(-6rem);
+  transform: translateY(-8rem);
 }
 
 .project-card-item__link {
@@ -469,22 +469,21 @@ nav {
   z-index: 1;
 }
 
-.project-card-item__hover {
+.project-card-item__hover{
   position: absolute;
   bottom: 35px;
   height: 60px;
   width: 80%;
   left: 50%;
+  opacity: 0;
   color: var(--white-color);
-  transform: translate(-50%, 0);
-  transition: transform 0.65s cubic-bezier(0.05, 0.1, 0.1, 0.2);
-  transition: opacity 0.15s cubic-bezier(0.05, 0.1, 0.1, 0.2);
+  transform: translate(-50%, 1rem);
+  transition: transform 0.65s cubic-bezier(0.05, 0.1, 0.1, 0.2), opacity 0.15s cubic-bezier(0.05, 0.1, 0.1, 0.2);
 }
 
 .project-card-item__desc {
   font-size: 1.6rem;
   font-weight: 200;
-  /* opacity: 0; */
 }
 
 .project__btn .btn {
@@ -825,7 +824,9 @@ nav {
 }
 
 .clients .container {
-  border: 1px solid;
+  border-left: 0.1rem solid var(--border-color);
+  border-bottom: 0.1rem solid var(--border-color);
+  border-radius: 0.6rem;
 }
 .clients__content {
 
@@ -836,8 +837,8 @@ nav {
 }
 
 .client-item {
-  border-top: 1px solid;
-  border-right: 1px solid;
+  border-top: 0.1rem solid var(--border-color);
+  border-right: 0.1rem solid var(--border-color);
   justify-content: center;
   height: 21.5rem;
   display: flex;
