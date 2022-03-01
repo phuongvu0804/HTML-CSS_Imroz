@@ -89,9 +89,6 @@ nav {
   transition: all 0.3s linear;
 }
 
-.header-subnav__item {
-}
-
 .subnav-subnav__item-link {
   display: inline-block;
   padding: 1rem 2.5rem;
@@ -156,9 +153,6 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.carousel__img {
 }
 
 .carousel__img-bg {
@@ -368,8 +362,6 @@ nav {
 .project {
   background-color: rgb(247 248 253);
 }
-.project__card-list {
-}
 
 .project__card-list > .container > .row + .row {
   margin-top: 3rem;
@@ -429,9 +421,6 @@ nav {
 
 .project-card-item__link {
   text-decoration: none;
-}
-
-.project-card-item__bg {
 }
 
 .project-card-item__bg-img {
@@ -512,12 +501,6 @@ nav {
 }
 
 /* About */
-.about {
-}
-
-.about__left {
-}
-
 .about__left-img {
   width: 100%;
   border-radius: 1rem;
@@ -532,9 +515,6 @@ nav {
   display: inline-flex;
   border: 1px solid #dee2e6;
   border-radius: var(--border-radius-tab);
-}
-
-.about-content__category {
 }
 
 .about-content__category .about-content__category-link {
@@ -572,9 +552,6 @@ nav {
   color: var(--black-color);
 }
 
-.category-content__list {
-}
-
 .category-content__list-item {
   list-style: none;
   margin-bottom: 1rem;
@@ -584,9 +561,6 @@ nav {
 .category-content__list-item svg {
   color: var(--primary-color);
   margin-right: 0.6rem;
-}
-
-.category-content__text {
 }
 
 /* Testimonial */
@@ -690,9 +664,6 @@ nav {
   margin: 0 auto;
 }
 
-.news__content {
-}
-
 .news__card {
   --border-radius: 1rem;
   position: relative;
@@ -732,9 +703,6 @@ nav {
   opacity: 0;
   border-radius: var(--border-radius);
   transition: background-image 0.65s cubic-bezier(0.05, 0.1, 0.1, 0.2);
-}
-
-.news__card-bg {
 }
 
 .news__card-bg-img {
@@ -846,9 +814,6 @@ nav {
   margin: 0 auto;
 }
 
-.clients__content {
-}
-
 .clients__content .col-xl-4 {
   padding: 0;
 }
@@ -956,8 +921,6 @@ footer {
   color: transparent;
 }
 
-.footer-copyright__logo {
-}
 .footer-copyright__logo-img {
   width: 40%;
 }
@@ -968,16 +931,11 @@ footer {
   opacity: 0.6;
 }
 
-.footer-category {
-}
-
 .footer-category__title {
   font-size: 2rem;
   margin-bottom: 3rem;
 }
 
-.footer-category__list {
-}
 
 .footer-category__item {
   list-style: none;
@@ -1014,9 +972,6 @@ footer {
   color: var(--primary-color);
   text-decoration: none;
   opacity: 1;
-}
-
-.footer-category__social {
 }
 
 .footer-category__social-item {

@@ -20,11 +20,23 @@
         font-size: 2.4rem;
     }
 
-    .navbar-btn {
+    .btn.navbar-btn {
         display: block;
         font-size: 1.4rem;
         padding: 1rem 1.8rem;
         letter-spacing: 0;
+    }
+
+    .mobile-menu__content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        bottom: 0;
+        background-color: var(--white);
+        z-index: 16;
+        padding: 2rem;
+        animation: slideInFromLeft 0.3s linear;
     }
 
     .carousel-container__item {
@@ -189,16 +201,62 @@
     }
 
     /* Actions */
+    footer {
+        position: relative;
+    }
+
+    .action {
+        border: unset;
+    }
+
+    .footer-wrapper .col-xl-4.col-md-6.col-12,
+    .footer-wrapper  .col-xl-3.col-md-6.col-12 {
+        padding-right: 0;
+
+    }
+
     .action__title {
         font-size: 2.6rem;
-        width: 100%;
+        width: unset;
         margin-bottom: 2.6rem;
+        padding: 3rem 1.5rem 0 1.5rem;
     }
 
     .btn.action__btn {
         font-size: 1.6rem;
         padding: 1.6rem 3.6rem;
         letter-spacing: 0.2rem;
+        margin: 0 1.5rem;
+    }
+
+    .footer-copyright{
+        height: unset;
+        margin-bottom: 2rem;
+        padding-right: unset;
+    }
+
+    .footer-copyright__logo {
+        padding-bottom: 4rem;
+    }
+
+    .footer-wrapper > .row > .col-xl-2:nth-child(2) {
+        margin-left: unset;
+    }
+
+    .footer-category {
+        padding-bottom: 3rem;
+    }
+
+    .footer-category__title {
+        margin-bottom: 1.6rem;
+    }
+
+    .footer-category__item {
+        margin-bottom: unset;
+    }
+
+    .footer-category__social > .row {
+        margin: 1.8rem 0 6rem 0;
     }
 }
 
@@ -224,6 +282,11 @@
         display: none;
     }
 
+    .btn.navbar-btn {
+        margin-right: 4rem;
+        margin-left: unset;
+    }
+
     .mobile-menu-trigger i {
         font-size: 2.5rem;
         color: var(--white);
@@ -243,71 +306,6 @@
         z-index: 16;
         padding: 2rem;
         animation: slideInFromLeft 0.3s linear;
-    }
-
-
-    .mobile-menu__header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 4rem;
-    }
-
-    .mobile-menu__header-logo {
-        width: 20%;
-    }
-
-    .mobile-menu__close-btn{
-        font-size: 1.8rem;
-        padding: 2rem 0 2rem 2rem;
-    }
-
-    .mobile-menu__item {
-        position: relative;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 0;
-        border-bottom: 0.1rem solid var(--border-color);
-    }
-
-    .mobile-menu__item:last-child {
-        border-bottom: none;
-    }
-
-    .mobile-sub-menu__input:checked ~ .mobile-sub-menu__list{
-        display: block;
-    } 
-
-    .drop-down-btn {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    .mobile-menu__item-text {
-        font-size: 1.4rem;
-        font-weight: 500;
-    }
-
-    .mobile-menu__item-icon {
-        font-size: 2.2rem;
-    }
-
-    .mobile-sub-menu__list {
-        display: none;
-        list-style: none;
-        padding: 1rem 0 1rem 4rem;
-    }
-
-    .mobile-sub-menu__item-link {
-        text-decoration: none;
-        color: var(--black-color);
-        padding: 0.6rem 0;
-        display: inline-block;
-        font-size: 1.2rem;
-        font-weight: 400;
     }
 
     /* Carousel */
@@ -379,8 +377,6 @@
     }
 
     /* Clients */
-
-
     .client-item__img {
         width: 50%;
     }
@@ -388,19 +384,11 @@
     /* Action */
     footer {
         position: relative;
-
     }
 
 
-
-    footer::after {
-        position: absolute;
-        content: "";
-        top: 25%;
-        left: 0;
-        right: 0;
-        border: 0.05rem solid var(--grey-color); 
-        opacity: 0.8;
+    .action {
+        border: unset;
     }
 
     .action__title {
@@ -461,18 +449,6 @@
 
     .mobile-menu__activation-btn:checked ~ .mobile-menu {
         display: block;
-    }
-   
-    .mobile-menu__content {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 40%;
-        bottom: 0;
-        background-color: var(--white);
-        z-index: 16;
-        padding: 2rem;
-        animation: slideInFromLeft 0.3s linear;
     }
 
 
@@ -537,13 +513,22 @@
         padding: 0.6rem 0;
         display: inline-block;
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 400;;
     }
 
     .action {
         flex-direction: column;
         align-items: flex-start; 
-        border-bottom: unset;
+    }
+
+    footer::after {
+        position: absolute;
+        content: "";
+        top: 25%;
+        left: 0;
+        right: 0;
+        border: 0.05rem solid var(--grey-color); 
+        opacity: 0.8;
     }
 }
 
