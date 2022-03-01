@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css">
 
     <link rel="stylesheet" href="./assets/style/base.css">
-    <link rel="stylesheet" href="./assets/style/responsive.css">
     <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
 </head>
 
 <body>
@@ -43,18 +43,13 @@
                 <span class="navbar-brand__text">imroz</span>
             </a>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto navbar-list">
-                    <li class="nav-item navbar-list__item">
+                    <li for="drop-down-input" class="nav-item navbar-list__item">
                         <a class="nav-link testimonial-thumb-item__link navbar-list__item-link" href="#">Home</a>
                         <ul class="subnav-subnav__list">
-                            <li class="subnav-subnav__item">
+                            <li class="mobile-sub-menu__item">
                                 <a href="" class="subnav-subnav__item-link">Main Demo</a>
                             </li>
                             <li class="subnav-subnav__item">
@@ -199,12 +194,196 @@
                         <a class="nav-link testimonial-thumb-item__link navbar-list__item-link"
                             href="http://rainbowit.net/html/imroz/digital-agency.html">Contact</a>
                     </li>
-                    <button class="btn navbar-btn">Buy now</button>
                 </ul>
+            </div>
+            <button class="btn navbar-btn">Buy now</button>
+
+            <!-- Mobile's & Tablet's Navbar navbar-nav -->
+            <div class="mobile-menu-wrapper">
+                <label for="mobile-menu__activation" class="mobile-menu-trigger">
+                    <i class="fas fa-bars"></i>
+                </label>
             </div>
         </nav>
     </header>
-
+    <!-- Modal -->
+    <input type="checkbox" class="mobile-menu__activation-btn" id="mobile-menu__activation" hidden>
+    <div class="mobile-menu hide-on-PC">
+        <div class="modal-layout ">
+        </div>
+        <div class="mobile-menu__content ">
+            <div class="mobile-menu__header">
+                <img src="./assets/image/logo-symbol-dark.png" alt="" class="mobile-menu__header-logo">
+                <label for="mobile-menu__activation" class="mobile-menu__close-btn fas fa-times">
+                </label>
+            </div>
+            <ul>
+                <li class="mobile-menu__item">
+                    <label for="drop-down-input--home" class="drop-down-btn">
+                        <span class="mobile-menu__item-text">Home</span>
+                        <i class="mobile-menu__item-icon fas fa-sort-down"></i>
+                    </label>
+                    <input id="drop-down-input--home" class="mobile-sub-menu__input" type="checkbox" hidden>
+                    <ul class="mobile-sub-menu__list">
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Main Demo</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Main Demo Dark</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Personal Portfolio</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Interiol Landing</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Portfolio One Page 02</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Minimal Portfolio</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Digital Agency</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Creative Agency</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Corportate Business</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Portfolio One Page</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Creative Agency Landing</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Business</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Design Portfolio</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Homme Particles</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Studio Agency</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Startup</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Creative Portfolio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <label for="drop-down-input--service" class="drop-down-btn">
+                        <span class="mobile-menu__item-text">Service</span>
+                        <i class="mobile-menu__item-icon fas fa-sort-down"></i>
+                    </label>
+                    <input id="drop-down-input--service" class="mobile-sub-menu__input" type="checkbox" hidden>
+                    <ul class="mobile-sub-menu__list">
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Service</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Service Details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <span class="mobile-menu__item-text">About</span>
+                </li>
+                <li class="mobile-menu__item">
+                    <label for="drop-down-input--pages" class="drop-down-btn">
+                        <span class="mobile-menu__item-text">Pages</span>
+                        <i class="mobile-menu__item-icon fas fa-sort-down"></i>
+                    </label>
+                    <input id="drop-down-input--pages" class="mobile-sub-menu__input" type="checkbox" hidden>
+                    <ul class="mobile-sub-menu__list">
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Blog</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Blog Details</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Service</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Service Details</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Portfolio</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Portfolio Details</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">404</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <label for="drop-down-input--blocks" class="drop-down-btn">
+                        <span class="mobile-menu__item-text">Blocks</span>
+                        <i class="mobile-menu__item-icon fas fa-sort-down"></i>
+                    </label>
+                    <input id="drop-down-input--blocks" class="mobile-sub-menu__input" type="checkbox" hidden>
+                    <ul class="mobile-sub-menu__list">
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Portfolio</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Team</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Service</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Video Popup</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Progressbar</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Gallery</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Counter</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Blog List</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Clint Logo</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Contact Form</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Google Map</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Columns</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Pricing Table</a>
+                        </li>
+                        <li class="mobile-sub-menu__item">
+                            <a href="" class="mobile-sub-menu__item-link">Button</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <span class="mobile-menu__item-text">Contact</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
     <!-- Carousel -->
     <div id="demo" class="carousel slide">
 
@@ -261,10 +440,10 @@
         </div>
 
         <!-- Left and right controls -->
-        <a class="carousel-control__btn carousel-control-prev carousel-control__btn--prev" href="#demo" data-slide="prev">
+        <a class="hide-on-mobile-tablet carousel-control__btn carousel-control-prev carousel-control__btn--prev" href="#demo" data-slide="prev">
             <span class="carousel-control__btn-icon"></span>
         </a>
-        <a class="carousel-control__btn carousel-control-next carousel-control__btn--next" href="#demo" data-slide="next">
+        <a class="hide-on-mobile-tablet carousel-control__btn carousel-control-next carousel-control__btn--next" href="#demo" data-slide="next">
             <span class="carousel-control__btn-icon">
             </span>
         </a>
@@ -277,14 +456,14 @@
             <span class="section__title-s">What we can do for you</span>
             <h2 class="section__title-l">Our Awesome Service</h2>
             <p class="section__desc">
-                There are many variations of passages of Lorem Ipsum available,<br>
+                There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration.
             </p>
         </div>
         <div class="container">
             <div class="service__card-list">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="service__card-item">
                             <a href="" class="service-card-item__link">
                                 <i class="service-card-item__img" data-feather="cast"></i>
@@ -296,7 +475,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="service__card-item">
                             <a href="" class="service-card-item__link">
                                 <i class="service-card-item__img" data-feather="layers"></i>
@@ -308,7 +487,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="service__card-item">
                             <a href="" class="service-card-item__link">
                                 <i class="service-card-item__img" data-feather="users"></i>
@@ -320,9 +499,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="service__card-item">
                             <a href="" class="service-card-item__link">
                                 <i class="service-card-item__img" data-feather="monitor"></i>
@@ -334,7 +511,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="service__card-item">
                             <a href="" class="service-card-item__link">
                                 <i class="service-card-item__img" data-feather="users"></i>
@@ -346,7 +523,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="service__card-item">
                             <a href="" class="service-card-item__link">
                                 <i class="service-card-item__img" data-feather="monitor"></i>
@@ -370,13 +547,13 @@
             <h2 class="section__title-l">Our Project</h2>
         </div>
         <p class="section__desc">
-            There are many variations of passages of Lorem Ipsum available, <br>
+            There are many variations of passages of Lorem Ipsum available,
             but the majority have suffered alteration.
         </p>
         <div class="project__card-list">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="project__card-item">
                             <a href="" class="project-card-item__link">
                                 <div class="project-card-item__bg">
@@ -387,7 +564,7 @@
                                         <p class="project-card-item__title-s">Development</p>
                                         <h4 class="project-card-item__title-l">Web Design</h4>
                                     </div>
-                                    <div class="project-card-item__hover">
+                                    <div class="project-card-item__hover hide-on-mobile-tablet">
                                         <span class="project-card-item__desc">
                                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                                         </span>
@@ -396,7 +573,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="project__card-item">
                             <a href="" class="project-card-item__link">
                                 <div class="project-card-item__bg">
@@ -407,7 +584,7 @@
                                         <p class="project-card-item__title-s">Product Design</p>
                                         <h4 class="project-card-item__title-l">App Development</h4>
                                     </div>
-                                    <div class="project-card-item__hover">
+                                    <div class="project-card-item__hover hide-on-mobile-tablet">
                                         <span class="project-card-item__desc">
                                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                                         </span>
@@ -416,7 +593,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="project__card-item">
                             <a href="" class="project-card-item__link">
                                 <div class="project-card-item__bg">
@@ -427,7 +604,7 @@
                                         <p class="project-card-item__title-s">Application</p>
                                         <h4 class="project-card-item__title-l">Photoshop Design</h4>
                                     </div>
-                                    <div class="project-card-item__hover">
+                                    <div class="project-card-item__hover hide-on-mobile-tablet">
                                         <span class="project-card-item__desc">
                                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                                         </span>
@@ -436,9 +613,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="project__card-item">
                             <a href="" class="project-card-item__link">
                                 <div class="project-card-item__bg">
@@ -449,7 +624,7 @@
                                         <p class="project-card-item__title-s">Development</p>
                                         <h4 class="project-card-item__title-l">Web Design</h4>
                                     </div>
-                                    <div class="project-card-item__hover">
+                                    <div class="project-card-item__hover hide-on-mobile-tablet">
                                         <span class="project-card-item__desc">
                                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                                         </span>
@@ -458,7 +633,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="project__card-item">
                             <a href="" class="project-card-item__link">
                                 <div class="project-card-item__bg">
@@ -469,7 +644,7 @@
                                         <p class="project-card-item__title-s">Application</p>
                                         <h4 class="project-card-item__title-l">Web Application</h4>
                                     </div>
-                                    <div class="project-card-item__hover">
+                                    <div class="project-card-item__hover hide-on-mobile-tablet">
                                         <span class="project-card-item__desc">
                                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                                         </span>
@@ -478,7 +653,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="project__card-item">
                             <a href="" class="project-card-item__link">
                                 <div class="project-card-item__bg">
@@ -489,7 +664,7 @@
                                         <p class="project-card-item__title-s">Photoshop</p>
                                         <h4 class="project-card-item__title-l">Photo Editing</h4>
                                     </div>
-                                    <div class="project-card-item__hover">
+                                    <div class="project-card-item__hover hide-on-mobile-tablet">
                                         <span class="project-card-item__desc">
                                             Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
                                         </span>
@@ -811,13 +986,13 @@
                 <span class="section__title-s">Latest post</span>
                 <h2 class="section__title-l">Latest News</h2>
                 <p class="section__desc">
-                    There are many variations of passages of Lorem Ipsum available,<br>
+                    There are many variations of passages of Lorem Ipsum available,
                     but the majority have suffered alteration.
                 </p>
             </div>
             <div class="news__content">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="news__card">
                             <div class="news__card-bg">
                                 <img src="./assets/image/blog-01.jpg" alt="" class="news__card-bg-img">
@@ -835,7 +1010,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="news__card">
                             <div class="news__card-bg">
                                 <img src="./assets/image/blog-02.jpg" alt="" class="news__card-bg-img">
@@ -853,7 +1028,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="news__card">
                             <div class="news__card-bg">
                                 <img src="./assets/image/blog-03.jpg" alt="" class="news__card-bg-img">
@@ -885,41 +1060,41 @@
             <span class="section__title-s">Our Clients</span>
             <h2 class="section__title-l">Our Clients</h2>
             <p class="section__desc">
-                There are many variations of passages of Lorem Ipsum available,<br>
+                There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration.
             </p>
         </div>
         <div class="clients__content">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-4 col-4">
                         <div class="client-item">
                             <img src="./assets/image/brand-01.png" alt="" class="client-item__img">
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-4 col-4">
                         <div class="client-item">
                             <img src="./assets/image/brand-02.png" alt="" class="client-item__img">
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-4 col-4">
                         <div class="client-item">
                             <img src="./assets/image/brand-03.png" alt="" class="client-item__img">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-4 col-4">
                         <div class="client-item">
                             <img src="./assets/image/brand-04.png" alt="" class="client-item__img">
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-4 col-4">
                         <div class="client-item">
                             <img src="./assets/image/brand-05.png" alt="" class="client-item__img">
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-4 col-4">
                         <div class="client-item">
                             <img src="./assets/image/brand-06.png" alt="" class="client-item__img">
                         </div>
@@ -934,13 +1109,13 @@
         <div class="container pt-120 pb-120">
             <div class="action d-flex">
                 <h2 class="action__title">
-                    Enough Talk, Let's Build <br>Something Together
+                    Enough Talk, Let's Build Something Together
                 </h2>
                 <button class="btn action__btn">READ OUT NOW</button>
             </div>
             <div class="footer-wrapper">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="footer-copyright">
                             <div class="footer-copyright__logo">
                                 <a href="/" class="footer-copyright__logo-link">
@@ -953,7 +1128,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-xl-2">
+                    <div class="col-xl-2 col-md-6">
                         <div class="footer-category">
                             <h5 class="footer-category__title">Quick Link</h5>
                             <ul class="footer-category__list">
@@ -975,7 +1150,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2">
+                    <div class="col-xl-2 col-md-6">
                         <div class="footer-category">
                             <h5 class="footer-category__title">Company</h5>
                                 <ul class="footer-category__list">
@@ -997,7 +1172,7 @@
                                 </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-category">
                             <h5 class="footer-category__title">Say Hello</h5>
                                 <ul class="footer-category__list">
@@ -1015,22 +1190,22 @@
                                     </li>
                                     <li class="footer-category__item footer-category__social">
                                         <ul class="row">
-                                            <li class="col-xl-2 footer-category__social-item">
+                                            <li class="col-xl-2 col-md-2 footer-category__social-item">
                                                 <a href="" class="footer-category__social-item-link">
                                                     <i class="fab fa-facebook-f"></i>
                                                 </a>
                                             </li>
-                                            <li class="col-xl-2 footer-category__social-item">
+                                            <li class="col-xl-2 col-md-2 footer-category__social-item">
                                                 <a href="" class="footer-category__social-item-link">
                                                     <i class="fab fa-linkedin-in"></i>
                                                 </a>
                                             </li>
-                                            <li class="col-xl-2 footer-category__social-item">
+                                            <li class="col-xl-2 col-md-2 footer-category__social-item">
                                                 <a href="" class="footer-category__social-item-link">
                                                     <i class="fab fa-twitter"></i>
                                                 </a>
                                             </li>
-                                            <li class="col-xl-2 footer-category__social-item">
+                                            <li class="col-xl-2 col-md-2 footer-category__social-item">
                                                 <a href="" class="footer-category__social-item-link">
                                                     <i class="fab fa-instagram"></i>
                                                 </a>
